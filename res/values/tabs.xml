@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_tab">Home</string>
+    <string name="speakers_tab">Speakers</string>
+    <string name="programme_tab">Programme</string>
+    <string name="diary_tab">Diary</string>
+    <string name="maps_tab">Venues</string>
+    <string name="more_tab">More</string>
+</resources>

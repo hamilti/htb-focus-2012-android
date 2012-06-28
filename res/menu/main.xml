@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/twitterMenuItem" android:title="@string/twitter_menu_title" android:showAsAction="never" android:icon="@drawable/twitter"></item>
+    <item android:id="@+id/dontateMenuItem" android:title="@string/donate_menu_title" android:showAsAction="never" android:icon="@drawable/donate"></item>
+    <item android:id="@+id/alertsMenuItem" android:title="@string/alerts_menu_title" android:showAsAction="never" android:icon="@drawable/alerts"></item>
+    <item android:id="@+id/faqsMenuItem" android:title="@string/faqs_menu_title" android:showAsAction="never" android:icon="@drawable/faqs"></item>
+    <item android:id="@+id/otherEventsMenuItem" android:title="@string/other_events_menu_title" android:showAsAction="never" android:icon="@drawable/other_events"></item>
+    <item android:id="@+id/specialOffersMenuItem" android:title="@string/special_offers_menu_title" android:showAsAction="never" android:icon="@drawable/special_offers"></item>
+</menu>

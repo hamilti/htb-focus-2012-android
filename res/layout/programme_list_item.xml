@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+	<View
+	    android:id="@+id/barColour"
+	    android:layout_width="10dp"
+	    android:layout_height="match_parent"
+	    android:background="#c4c4c4"
+	    android:layout_marginRight="10dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/ListItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/subTitle"
+            style="@style/ListItemSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/speakerName"
+            style="@style/ListItemSpeaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />  
+            
+        <TextView
+            android:id="@+id/time"
+            style="@style/ListItemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />           
+        
+    </LinearLayout>
+
+</LinearLayout>

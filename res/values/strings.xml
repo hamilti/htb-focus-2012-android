@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="app_name">Focus 2012</string>
+    <string name="no_list_data">No data is available</string>
+    <string name="twitter_menu_title">Twitter Stream</string>
+    <string name="donate_menu_title">Donate</string>
+    <string name="alerts_menu_title">Alerts</string>
+    <string name="faqs_menu_title">FAQs</string>
+    <string name="other_events_menu_title">Other events</string>
+    <string name="special_offers_menu_title">Special offers</string>
+    <string name="website_button">View Website</string>
+    <string name="twiter_button">Follow on Twitter</string>
+    <string name="map_button_title">View map</string>
+    <string name="floorplan_button_title">View floorplan</string>
+    <string name="view_all_venues_row_title">View all venues on a map</string>
+    <string name="all_venues_action_bar_title">All venues</string>
+    <string name="floorplan_activity_title">Floorplan</string>
+    <string name="event_book_button_title">Book online</string>
+    <string name="about_menu_title">About Focus</string>
+    <string name="speaker_sessions_title">Sessions</string>
+    <string name="session_speakers_title">Speakers</string>
+    <string name="venue_details_button_title">Venue Details</string>
+    <string name="session_bookmark_button_title">Add to Diary</string>
+    <string name="session_bookmarked_button_title">Remove from Diary</string>
+    <string name="Diary_change_seminar_choice">Change your option</string>
+    <string name="Diary_view_seminar_options">Choose your option</string>
+    <string name="programme_change_seminar_choice">Change your option</string>
+    <string name="programme_view_seminar_options">Choose your option</string>
+    <string name="hello">TODO</string>
+    <string name="eventMessage">Focus is the annual teaching week away for members of HTB, its church plants and other church friends.</string>
+</resources>

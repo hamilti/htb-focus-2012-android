@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="emphasis">#31b6e7</color>
+    <color name="bg_gray">#222222</color>
+    <color name="session_default">#cccccc</color>
+    <color name="session_type_main">#cccccc</color>
+    <color name="session_type_seminar_option">#cccccc</color>
+    <color name="session_type_seminar_slot">#cccccc</color>
+    <color name="session_type_break">#cccccc</color>
+    <color name="session_type_admin">#cccccc</color>
+    <color name="fixed_section_header">#999999</color>
+    <color name="section_header">#4e4e4e</color>    
+    <color name="section_header_text">#adadad</color>   
+  
+</resources>  
