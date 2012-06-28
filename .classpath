@@ -4,11 +4,7 @@
 	<classpathentry kind="src" path="gen"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry kind="lib" path="/Users/ihamilton/Desktop/alpha-conferences-android Backup/ActionBarSherlock"/>
-	<classpathentry kind="lib" path="/Users/ihamilton/Desktop/alpha-conferences-android Backup/android-mapviewballoons"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/abs 4.0"/>
 	<classpathentry kind="lib" path="libs/commons-lang3-3.1.jar"/>
 	<classpathentry kind="lib" path="libs/joda-time-2.1.jar"/>
-	<classpathentry kind="lib" path="/Users/ihamilton/Downloads/actionbarsherlock-plugin-maps-4.0.0.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="org.alpha.focus2012"
+      android:versionCode="1"
+      android:versionName="1.1" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AlphaTheme" >
+
+        <service android:name=".data.DownloadService"></service>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".twitter.TwitterActivity"></activity>
+        <activity android:name=".more.DonateActivity"></activity>
+        <activity android:name=".speakers.SpeakerDetailActivity"></activity>
+        <activity android:name=".diary.SeminarOptionsActivity"></activity>
+        <activity android:name=".diary.SessionDetailActivity"></activity>
+        <activity android:name=".diary.SessionsBySpeakerActivity"></activity>
+        <activity android:name=".diary.SessionsByHourActivity"></activity>
+        <service android:name=".data.DownloadService"></service>
+        <activity android:name=".map.VenueMapActivity"></activity>
+        <activity android:name=".map.VenueDetailActivity"></activity>
+        <activity android:name=".map.FloorplanActivity"></activity>
+        <activity android:name=".alerts.AlertsActivity"></activity>
+        <activity android:name=".page.PageActivity"></activity>
+        <activity android:name=".faqs.FaqsActivity"></activity>
+        <activity android:name=".offers.OffersActivity"></activity>
+        <activity android:name=".events.EventsActivity"></activity>
+        <activity android:name=".events.EventDetailActivity"></activity>
+    </application>
+    
+</manifest> 
