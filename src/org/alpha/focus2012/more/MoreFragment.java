@@ -1,8 +1,9 @@
 package org.alpha.focus2012.more;
 
+import org.alpha.focus2012.Constants;
 import org.alpha.focus2012.R;
 import org.alpha.focus2012.alerts.AlertsActivity;
-//import org.alpha.focus2012.events.EventDetailActivity;
+import org.alpha.focus2012.events.EventDetailActivity;
 import org.alpha.focus2012.events.EventsActivity;
 import org.alpha.focus2012.faqs.FaqsActivity;
 import org.alpha.focus2012.offers.OffersActivity;
@@ -33,17 +34,29 @@ public class MoreFragment extends SherlockListFragment {
             }
         };
         
-       // MoreRow aboutRow = new MoreRow();
-       // aboutRow.title = getString(R.string.about_menu_title);        
-       // aboutRow.iconImageResource = R.drawable.about;
-       // aboutRow.onClickListener = new View.OnClickListener() {            
-       //     @Override
+       // MoreRow videoRow = new MoreRow();
+       // videoRow.title = getString(R.string.video_menu_title);
+       // videoRow.iconImageResource =  R.drawable.donate;
+       // videoRow.onClickListener = new View.OnClickListener() {
        //     public void onClick(View v) {
-       //         Intent intent = new Intent(getActivity(), EventDetailActivity.class);
-       //         intent.putExtra(EventDetailActivity.CONFERENCE_ID, Constants.CONFERENCE_ID);
-       //         startActivity(intent);                
+       //         startActivity(new Intent(getActivity(), VideoActivity.class));
        //     }
        // };
+        
+       /*
+       MoreRow aboutRow = new MoreRow();
+       aboutRow.title = getString(R.string.about_menu_title);        
+       aboutRow.iconImageResource = R.drawable.about;
+       aboutRow.onClickListener = new View.OnClickListener() {            
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EventDetailActivity.class);
+                intent.putExtra(EventDetailActivity.CONFERENCE_ID, Constants.CONFERENCE_ID);
+                startActivity(intent);                
+            }
+        };
+        */
+        
         
        // MoreRow donateRow = new MoreRow();
        // donateRow.title = getString(R.string.donate_menu_title);
@@ -103,6 +116,7 @@ public class MoreFragment extends SherlockListFragment {
         
         MoreRow[] listItems  = {
                 twitterRow,
+                //videoRow,
                 //aboutRow,
                 //donateRow,
                 alertRow,

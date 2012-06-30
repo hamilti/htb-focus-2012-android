@@ -161,7 +161,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 String json = c.getString(0);
                 results.add(new JSONObject(json));
             } catch (JSONException e) {
-                Log.w("could not parse json for tweet, ignoring", e);
+                Log.w("TwitterActivity", e);
             }
         }
         c.close();

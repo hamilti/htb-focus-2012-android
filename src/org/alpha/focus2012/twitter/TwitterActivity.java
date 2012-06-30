@@ -25,7 +25,8 @@ import com.actionbarsherlock.view.MenuItem;
 
 
 public class TwitterActivity extends SherlockListActivity {
-
+	
+	private static final String TAG = "TwitterActivity";
 
     private final ServiceConnection serviceConnection = new ServiceConnection() {
         public void onServiceDisconnected(ComponentName name) {}
@@ -36,6 +37,7 @@ public class TwitterActivity extends SherlockListActivity {
     private final BroadcastReceiver receiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
+        	Log.d(TAG, "BroadcastReceiver");
             if (Constants.TWITTER_WAS_UPDATED_INTENT.equals(intent.getAction())) {
                 populate();
             }
@@ -46,6 +48,7 @@ public class TwitterActivity extends SherlockListActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+    	Log.d(TAG, "on create start");
         super.onCreate(savedInstanceState);
         mActionBar = getSupportActionBar();    
         mActionBar.setTitle("Twitter Stream");
@@ -58,13 +61,17 @@ public class TwitterActivity extends SherlockListActivity {
     private void populate() {
         DBHelper h = null;
         SQLiteDatabase db = null;
-        Log.d("Twitter", "activity start");
+        Log.d(TAG, "populate start");
         try {
             h = new DBHelper(this);
             db = h.getWritableDatabase();
-
+            Log.d("TwitterActivity", "get database");
             List<Tweet> tweets = new ArrayList<Tweet>();
+            
+            Log.d(TAG, "Sise:" + Integer.toString(tweets.size()));
+            
             for (JSONObject j : DBHelper.getTweets(db)) {
+            	Log.d(TAG, j.toString());
                 tweets.add(new Tweet(j));
             }
             TwitterAdapter a = (TwitterAdapter) getListAdapter();
@@ -80,6 +87,7 @@ public class TwitterActivity extends SherlockListActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+    	Log.d(TAG, "onOptionsItemSelected: " + item.getItemId());
         switch (item.getItemId()) {
         case android.R.id.home:
             finish();
@@ -92,6 +100,7 @@ public class TwitterActivity extends SherlockListActivity {
 
     @Override
     protected void onResume() {
+    	Log.d(TAG, "onResume");
         super.onResume();
         LocalBroadcastManager.getInstance(this).registerReceiver(receiver, new IntentFilter(Constants.TWITTER_WAS_UPDATED_INTENT));
         bindService(new Intent(this, TwitterPollService.class), serviceConnection, Context.BIND_AUTO_CREATE);
@@ -100,6 +109,7 @@ public class TwitterActivity extends SherlockListActivity {
 
     @Override
     protected void onPause() {
+    	Log.d(TAG, "onPause");
         super.onPause();
         unbindService(serviceConnection);
         LocalBroadcastManager.getInstance(this).unregisterReceiver(receiver);

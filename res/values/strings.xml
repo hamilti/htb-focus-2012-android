@@ -3,6 +3,7 @@
     <string name="app_name">Focus 2012</string>
     <string name="no_list_data">No data is available</string>
     <string name="twitter_menu_title">Twitter Stream</string>
+    <string name="video_menu_title">Watch Promo Video</string>
     <string name="donate_menu_title">Donate</string>
     <string name="alerts_menu_title">Alerts</string>
     <string name="faqs_menu_title">FAQs</string>
@@ -18,7 +19,7 @@
     <string name="event_book_button_title">Book online</string>
     <string name="about_menu_title">About Focus</string>
     <string name="speaker_sessions_title">Sessions</string>
-    <string name="session_speakers_title">Speakers</string>
+    <string name="session_speakers_title">Speaker</string>
     <string name="venue_details_button_title">Venue Details</string>
     <string name="session_bookmark_button_title">Add to Diary</string>
     <string name="session_bookmarked_button_title">Remove from Diary</string>

@@ -829,7 +829,9 @@ containing a value of this type.
         public static final int twitter=0x7f020075;
     }
     public static final class id {
+        public static final int LinearLayout01=0x7f04004a;
         public static final int LinearLayout1=0x7f04002d;
+        public static final int VideoView=0x7f04004b;
         public static final int abs__action_bar=0x7f040024;
         public static final int abs__action_bar_container=0x7f040023;
         public static final int abs__action_bar_subtitle=0x7f040013;
@@ -859,7 +861,7 @@ containing a value of this type.
         public static final int abs__title=0x7f04001d;
         public static final int abs__titleDivider=0x7f04001e;
         public static final int abs__up=0x7f04000d;
-        public static final int alertsMenuItem=0x7f04004c;
+        public static final int alertsMenuItem=0x7f04004e;
         public static final int balloon_close=0x7f040001;
         public static final int balloon_disclosure=0x7f04002c;
         public static final int balloon_inner_layout=0x7f040000;
@@ -872,9 +874,9 @@ containing a value of this type.
         public static final int button2=0x7f04002f;
         public static final int description=0x7f04003a;
         public static final int disableHome=0x7f04000b;
-        public static final int dontateMenuItem=0x7f04004b;
+        public static final int dontateMenuItem=0x7f04004d;
         public static final int eventMessage=0x7f04003b;
-        public static final int faqsMenuItem=0x7f04004d;
+        public static final int faqsMenuItem=0x7f04004f;
         public static final int floorplanButton=0x7f040049;
         public static final int headerTitle=0x7f040041;
         public static final int homeAsUp=0x7f040008;
@@ -885,7 +887,7 @@ containing a value of this type.
         public static final int mapButton=0x7f040048;
         public static final int nextButton=0x7f040040;
         public static final int normal=0x7f040003;
-        public static final int otherEventsMenuItem=0x7f04004e;
+        public static final int otherEventsMenuItem=0x7f040050;
         public static final int pagerView=0x7f04003e;
         public static final int prevButton=0x7f04003f;
         public static final int showCustom=0x7f04000a;
@@ -893,7 +895,7 @@ containing a value of this type.
         public static final int showTitle=0x7f040009;
         public static final int space2=0x7f040038;
         public static final int speakerName=0x7f040036;
-        public static final int specialOffersMenuItem=0x7f04004f;
+        public static final int specialOffersMenuItem=0x7f040051;
         public static final int subTitle=0x7f040035;
         public static final int subTitleTextView=0x7f040031;
         public static final int tabMode=0x7f040005;
@@ -905,7 +907,7 @@ containing a value of this type.
         public static final int tweet_text=0x7f040046;
         public static final int tweet_user=0x7f040045;
         public static final int twitterButton=0x7f040043;
-        public static final int twitterMenuItem=0x7f04004a;
+        public static final int twitterMenuItem=0x7f04004c;
         public static final int useLogo=0x7f040006;
         public static final int websiteButton=0x7f040042;
         public static final int wrap_content=0x7f040002;
@@ -941,26 +943,28 @@ containing a value of this type.
         public static final int event=0x7f030018;
         public static final int home=0x7f030019;
         public static final int html_list_item=0x7f03001a;
-        public static final int list=0x7f03001b;
-        public static final int main=0x7f03001c;
-        public static final int more_list_item=0x7f03001d;
-        public static final int pager=0x7f03001e;
-        public static final int programme_list_item=0x7f03001f;
-        public static final int section_header_item=0x7f030020;
-        public static final int sherlock_spinner_dropdown_item=0x7f030021;
-        public static final int sherlock_spinner_item=0x7f030022;
-        public static final int speaker_buttons_list_item=0x7f030023;
-        public static final int speaker_list_item=0x7f030024;
-        public static final int twitter_list_item=0x7f030025;
-        public static final int venue_buttons_list_item=0x7f030026;
+        public static final int image_list_item=0x7f03001b;
+        public static final int list=0x7f03001c;
+        public static final int main=0x7f03001d;
+        public static final int more_list_item=0x7f03001e;
+        public static final int pager=0x7f03001f;
+        public static final int programme_list_item=0x7f030020;
+        public static final int section_header_item=0x7f030021;
+        public static final int sherlock_spinner_dropdown_item=0x7f030022;
+        public static final int sherlock_spinner_item=0x7f030023;
+        public static final int speaker_buttons_list_item=0x7f030024;
+        public static final int speaker_list_item=0x7f030025;
+        public static final int twitter_list_item=0x7f030026;
+        public static final int venue_buttons_list_item=0x7f030027;
+        public static final int videoview=0x7f030028;
     }
     public static final class menu {
         public static final int main=0x7f0b0000;
     }
     public static final class string {
-        public static final int Diary_change_seminar_choice=0x7f090020;
-        public static final int Diary_view_seminar_options=0x7f090021;
-        public static final int about_menu_title=0x7f09001a;
+        public static final int Diary_change_seminar_choice=0x7f090021;
+        public static final int Diary_view_seminar_options=0x7f090022;
+        public static final int about_menu_title=0x7f09001b;
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f090000;
@@ -991,37 +995,38 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f090009;
-        public static final int alerts_menu_title=0x7f09000e;
-        public static final int all_venues_action_bar_title=0x7f090017;
+        public static final int alerts_menu_title=0x7f09000f;
+        public static final int all_venues_action_bar_title=0x7f090018;
         public static final int app_name=0x7f09000a;
-        public static final int diary_tab=0x7f090029;
-        public static final int donate_menu_title=0x7f09000d;
-        public static final int eventMessage=0x7f090025;
-        public static final int event_book_button_title=0x7f090019;
-        public static final int faqs_menu_title=0x7f09000f;
-        public static final int floorplan_activity_title=0x7f090018;
-        public static final int floorplan_button_title=0x7f090015;
-        public static final int hello=0x7f090024;
-        public static final int home_tab=0x7f090026;
-        public static final int map_button_title=0x7f090014;
-        public static final int maps_tab=0x7f09002a;
-        public static final int more_tab=0x7f09002b;
+        public static final int diary_tab=0x7f09002a;
+        public static final int donate_menu_title=0x7f09000e;
+        public static final int eventMessage=0x7f090026;
+        public static final int event_book_button_title=0x7f09001a;
+        public static final int faqs_menu_title=0x7f090010;
+        public static final int floorplan_activity_title=0x7f090019;
+        public static final int floorplan_button_title=0x7f090016;
+        public static final int hello=0x7f090025;
+        public static final int home_tab=0x7f090027;
+        public static final int map_button_title=0x7f090015;
+        public static final int maps_tab=0x7f09002b;
+        public static final int more_tab=0x7f09002c;
         public static final int no_list_data=0x7f09000b;
-        public static final int other_events_menu_title=0x7f090010;
-        public static final int programme_change_seminar_choice=0x7f090022;
-        public static final int programme_tab=0x7f090028;
-        public static final int programme_view_seminar_options=0x7f090023;
-        public static final int session_bookmark_button_title=0x7f09001e;
-        public static final int session_bookmarked_button_title=0x7f09001f;
-        public static final int session_speakers_title=0x7f09001c;
-        public static final int speaker_sessions_title=0x7f09001b;
-        public static final int speakers_tab=0x7f090027;
-        public static final int special_offers_menu_title=0x7f090011;
-        public static final int twiter_button=0x7f090013;
+        public static final int other_events_menu_title=0x7f090011;
+        public static final int programme_change_seminar_choice=0x7f090023;
+        public static final int programme_tab=0x7f090029;
+        public static final int programme_view_seminar_options=0x7f090024;
+        public static final int session_bookmark_button_title=0x7f09001f;
+        public static final int session_bookmarked_button_title=0x7f090020;
+        public static final int session_speakers_title=0x7f09001d;
+        public static final int speaker_sessions_title=0x7f09001c;
+        public static final int speakers_tab=0x7f090028;
+        public static final int special_offers_menu_title=0x7f090012;
+        public static final int twiter_button=0x7f090014;
         public static final int twitter_menu_title=0x7f09000c;
-        public static final int venue_details_button_title=0x7f09001d;
-        public static final int view_all_venues_row_title=0x7f090016;
-        public static final int website_button=0x7f090012;
+        public static final int venue_details_button_title=0x7f09001e;
+        public static final int video_menu_title=0x7f09000d;
+        public static final int view_all_venues_row_title=0x7f090017;
+        public static final int website_button=0x7f090013;
     }
     public static final class style {
         public static final int ActionBar=0x7f0a0068;

@@ -13,6 +13,8 @@ import org.alpha.focus2012.resources.Resource;
 import org.alpha.focus2012.rows.ButtonBarRow;
 import org.alpha.focus2012.rows.DetailRow;
 import org.alpha.focus2012.rows.HTMLRow;
+import org.alpha.focus2012.rows.ImageRow;
+
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
@@ -59,12 +61,11 @@ public class VenueDetailActivity extends SherlockListActivity {
     
     
     private void populate() {
-        //final Context context = this;
         
          List<Row> rows = new ArrayList<Row>();
-         //rows.add(new DetailRow(mVenue.name, mVenue.address(), new Resource(mVenue.imageKey, Resource.Type.VenueImageSmall), this));
+         rows.add(new ImageRow(mVenue.name, mVenue.address(), new Resource(mVenue.imageKey, Resource.Type.VenueImageLarge), this));
          //removed the image from the row
-         rows.add(new DetailRow(mVenue.name, mVenue.address(), null, this));
+         //rows.add(new DetailRow(mVenue.name, mVenue.address(), null, this));
          
          OnClickListener viewMapOnClick = new View.OnClickListener() {            
             @Override
@@ -88,6 +89,7 @@ public class VenueDetailActivity extends SherlockListActivity {
         };
         */
         
+        //rows.add(new ImageRow(new Resource(mVenue.imageKey, Resource.Type.VenueImageLarge), this));
         
         ButtonBarRow buttons = new ButtonBarRow(this);
         buttons.setButton1(getString(R.string.map_button_title), viewMapOnClick);

@@ -66,6 +66,7 @@ public class VenueMapActivity extends SherlockMapActivity {
         double east = -180;        
         Log.d("VenueMapActivity", "start");
         List<Venue> mVenues = DataStore.venues(context);
+        
         if (mVenues.isEmpty()) {
             return;
         }        

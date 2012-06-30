@@ -88,18 +88,19 @@ public class MapFragment extends SherlockListFragment {
         mVenues = DataStore.venues(context);
         if (mVenues.isEmpty()) {
             return;
-        }        
+        }
         
         List<String> rows = new ArrayList<String>();
+        
         for (Venue venue : mVenues) {
             rows.add(venue.name);            
         }
         
-        
-        //removed by for initial prod release
-        //rows.add(getString(R.string.view_all_venues_row_title));
+        //Add the all items map
+        rows.add(getString(R.string.view_all_venues_row_title));
         
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(context, android.R.layout.simple_list_item_1, rows);
+        
         setListAdapter(adapter);
     }
 

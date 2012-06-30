@@ -20,6 +20,7 @@ import org.alpha.focus2012.rows.ButtonBarRow;
 import org.alpha.focus2012.rows.DetailRow;
 import org.alpha.focus2012.rows.HTMLRow;
 import org.alpha.focus2012.rows.DiaryRow;
+import org.alpha.focus2012.rows.ImageRow;
 import org.alpha.util.MultiValueMap;
 import org.alpha.util.ReadablePartialComparator;
 
@@ -68,7 +69,7 @@ public class SpeakerDetailActivity extends SherlockListActivity {
     
     private void populate() {
         List<Row> rows = new ArrayList<Row>();
-        rows.add(new DetailRow(speaker.displayName(), speaker.position, new Resource(speaker.imageKey, Resource.Type.SpeakerImageSmall), this));
+        rows.add(new ImageRow(speaker.displayName(), speaker.position, new Resource(speaker.imageKey, Resource.Type.SpeakerImageLarge), this));
         rows.add(new HTMLRow(speaker.biography, this));
 
         OnClickListener websiteOnClick = null;

@@ -133,13 +133,29 @@ public class SessionDetailActivity extends SherlockListActivity {
             };
         }
         
+		//Set Alarm
+		OnClickListener alarmButtonHandler = null;
+        if (venue != null) {
+            alarmButtonHandler = new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                	DiaryChoices.setAlarmSession(SessionDetailActivity.this, session);
+                    setResult(RESULT_OK);
+                    finish();   
+                }
+            };
+        }
+		
+		
         ButtonBarRow buttons = new ButtonBarRow(this);
         buttons.setButton1(getString(R.string.venue_details_button_title), venueButtonHandler);
         buttons.setButton2(bookmarkButtonTitle, bookmarkButtonHandler);
         detailRows.add(buttons);
         
-        // description
+        //buttons.setButton1("Add Alarm", alarmButtonHandler);
+        //detailRows.add(buttons);
         
+        // description
         detailRows.add(new HTMLRow(session.text, this));
 
         // speakers

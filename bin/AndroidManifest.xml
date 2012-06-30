@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest package="org.alpha.focus2012"
-      android:versionCode="1"
-      android:versionName="1.1" xmlns:android="http://schemas.android.com/apk/res/android">
+      android:versionCode="2"
+      android:versionName="1.2" xmlns:android="http://schemas.android.com/apk/res/android">
     
-    <uses-sdk android:minSdkVersion="8" android:targetSdkVersion="15" />
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="14" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -22,14 +22,19 @@
             </intent-filter>
         </activity>
         
+        <service android:name=".twitter.TwitterPollService"></service>
+        
+        <!--  receiver android:name=".diary.AlarmReceiver"></receiver> -->
+        
+        <uses-library android:required="true" android:name="com.google.android.maps" />
+        
         <activity android:name=".twitter.TwitterActivity"></activity>
-        <activity android:name=".more.DonateActivity"></activity>
+        <!--  <activity android:name=".more.VideoActivity"></activity> -->
         <activity android:name=".speakers.SpeakerDetailActivity"></activity>
         <activity android:name=".diary.SeminarOptionsActivity"></activity>
         <activity android:name=".diary.SessionDetailActivity"></activity>
         <activity android:name=".diary.SessionsBySpeakerActivity"></activity>
         <activity android:name=".diary.SessionsByHourActivity"></activity>
-        <service android:name=".data.DownloadService"></service>
         <activity android:name=".map.VenueMapActivity"></activity>
         <activity android:name=".map.VenueDetailActivity"></activity>
         <activity android:name=".map.FloorplanActivity"></activity>
