@@ -34,14 +34,14 @@ public class MoreFragment extends SherlockListFragment {
             }
         };
         
-       // MoreRow videoRow = new MoreRow();
-       // videoRow.title = getString(R.string.video_menu_title);
-       // videoRow.iconImageResource =  R.drawable.donate;
-       // videoRow.onClickListener = new View.OnClickListener() {
-       //     public void onClick(View v) {
-       //         startActivity(new Intent(getActivity(), VideoActivity.class));
-       //     }
-       // };
+        MoreRow videoRow = new MoreRow();
+        videoRow.title = getString(R.string.video_menu_title);
+        videoRow.iconImageResource =  R.drawable.about;
+        videoRow.onClickListener = new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), VideoActivity.class));
+            }
+        };
         
        /*
        MoreRow aboutRow = new MoreRow();
@@ -116,7 +116,7 @@ public class MoreFragment extends SherlockListFragment {
         
         MoreRow[] listItems  = {
                 twitterRow,
-                //videoRow,
+                videoRow,
                 //aboutRow,
                 //donateRow,
                 alertRow,

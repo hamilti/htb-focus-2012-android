@@ -2,11 +2,12 @@
 
 <LinearLayout android:id="@+id/LinearLayout01"
         android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
-        android:paddingLeft="2px" android:paddingRight="2px"
-        android:paddingTop="2px" android:paddingBottom="2px"
+        android:paddingLeft="2dp" android:paddingRight="2dp"
+        android:paddingTop="2dp" android:paddingBottom="2dp"
         android:layout_width="fill_parent" android:orientation="vertical">
 
         <VideoView android:layout_height="fill_parent"
-                android:layout_width="fill_parent" android:id="@+id/VideoView"></VideoView>
+                android:layout_width="fill_parent" android:id="@+id/VideoView">
+        </VideoView>
 
 </LinearLayout>
